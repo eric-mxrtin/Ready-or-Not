@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class playermovement2 : MonoBehaviour
 {
+
     public Animator anim;
 
     public float moveSpeed;
@@ -18,6 +19,7 @@ public class playermovement2 : MonoBehaviour
 
     private void Start()
     {
+
         rb = GetComponent<Rigidbody2D>();
     }
     private void Update()
