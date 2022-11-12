@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void Singleplayer()
+    public void Levels()
     {
-        SceneManager.LoadScene("Singleplayer");
+        SceneManager.LoadScene("Levels");
     }
 
     public void Multiplayer()
