@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Levels.unity
+    guid: c6d3226c8f31bfa43b4a353913b9efb6
+  - enabled: 1
     path: Assets/Scenes/SingleplayerF.unity
     guid: 354ac32143d853846bd3d33df48812e5
+  - enabled: 1
+    path: Assets/Scenes/SingleplayerA.unity
+    guid: dbdf3c28f0a1a974dac7265d17ba0aa6
+  - enabled: 1
+    path: Assets/Scenes/SingleplayerC.unity
+    guid: e85a5a721c50042459155dadee6c6d5b
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
+    guid: 3b502f0925b613f459889bbd92b2c791
+  - enabled: 1
+    path: Assets/Scenes/Scores.unity
+    guid: 9313302b13f3ec7408832c5fa47b85bd
   m_configObjects: {}
