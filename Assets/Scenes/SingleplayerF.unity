@@ -168,9 +168,9 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.23
     y: 0
-    width: 1
+    width: 0.55
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -1030,7 +1030,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 166b29834b30ae346b2a80697bc38ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aiPath: {fileID: 157615477}
 --- !u!114 &1640117853
 MonoBehaviour:
   m_ObjectHideFlags: 0

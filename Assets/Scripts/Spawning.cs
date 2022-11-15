@@ -13,7 +13,7 @@ public class Spawning : MonoBehaviour
     {
         for (int i = 1; i <= objectCount; i ++)
         {
-            Vector2 spawnPos = new Vector2(Random.Range(-4f, 4f), Random.Range(-4f, 4f));
+            Vector2 spawnPos = new Vector2(Random.Range(-3.9f, 4.1f), Random.Range(-3.5f, 4.5f));
             Instantiate(elementPrefab[Random.Range(0, elementPrefab.Length)], spawnPos, Quaternion.identity);
         }
     }
