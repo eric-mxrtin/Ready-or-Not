@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3927879740054859895}
   - component: {fileID: 638475184320628508}
-  - component: {fileID: 7459667432140967385}
+  - component: {fileID: 222112023881937192}
   m_Layer: 6
   m_Name: fstump
   m_TagString: Untagged
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7459667432140967385
-BoxCollider2D:
+--- !u!58 &222112023881937192
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,16 +98,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.002868615, y: -0.003585836}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0.0030660508, y: -0.014179863}
   serializedVersion: 2
-  m_Size: {x: 0.10549493, y: 0.0753742}
-  m_EdgeRadius: 0
+  m_Radius: 0.05968834

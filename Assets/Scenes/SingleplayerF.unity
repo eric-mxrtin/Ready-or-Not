@@ -997,10 +997,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000011175871, y: -0.029780678}
+  m_Offset: {x: -0.000000011175871, y: -0.051134244}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1011,7 +1011,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.073066615, y: 0.11043866}
+  m_Size: {x: 0.073066615, y: 0.06773153}
   m_EdgeRadius: 0
 --- !u!50 &1520511741
 Rigidbody2D:
@@ -1554,7 +1554,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5169b3b26415bcb4ca2631618e5f44bb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1616,7 +1616,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!58 &1799904566
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1627,7 +1627,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.000000012592882, y: -0.07128084}
@@ -1795,7 +1795,7 @@ MonoBehaviour:
   - {fileID: 8251715638604614771, guid: 56c0b98596185b445be00369f7b7b2a6, type: 3}
   - {fileID: 2872649497779933409, guid: cb6b0e23410d2f149a14736064a89fc1, type: 3}
   - {fileID: 6125894392082561230, guid: 652a2e4efeaa64f4fbdd783f9007c219, type: 3}
-  objectCount: 200
+  objectCount: 150
 --- !u!1 &1984950231
 GameObject:
   m_ObjectHideFlags: 0
