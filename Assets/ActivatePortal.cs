@@ -9,6 +9,7 @@ public class ActivatePortal : MonoBehaviour
     public Sprite PortalOn;
     public int activateTime;
     public bool isPortalOn;
+    public bool escaped;
     
     //public bool IsTouching(Collider2D collider, ContactFilter2D contactFilter);
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class ActivatePortal : MonoBehaviour
     // }
     void OnTriggerEnter2D(Collider2D other) 
     {
+        escaped = true;
         SceneManager.LoadScene("Main Menu"); 
     }
 

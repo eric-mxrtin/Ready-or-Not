@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoringTimer : MonoBehaviour
 {
@@ -22,14 +23,20 @@ public class ScoringTimer : MonoBehaviour
         if (timerIsActive)
         {
         currentTime -= 1 * Time.deltaTime;
-        countdownText.GetComponent<TMPro.TextMeshProUGUI>().text = currentTime.ToString("F1");
+        float minutes = Mathf.FloorToInt(currentTime / 60);
+        float seconds = Mathf.FloorToInt(currentTime % 60);
+        countdownText.GetComponent<TMPro.TextMeshProUGUI>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
         }
 
         if(currentTime <= 0)
         {
             currentTime = 0;
             timerIsActive = false;
+            SceneManager.LoadScene("Main Menu");
+
         }
+
+
     }   
 
 }
