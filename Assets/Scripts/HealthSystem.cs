@@ -7,10 +7,11 @@ public class HealthSystem : MonoBehaviour
 {
     public GameObject[] hearts;
     public int life;
+    public int timeLoseLife;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(InvokeMethod(TakeDamage,3, 3));
+        StartCoroutine(InvokeMethod(TakeDamage,timeLoseLife, 3));
     }
 
     // Update is called once per frame

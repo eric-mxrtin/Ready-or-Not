@@ -200,12 +200,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 16040778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.057, y: -0.035, z: -6.179459}
+  m_LocalPosition: {x: -0.05699998, y: -0.034999996, z: -6.179459}
   m_LocalScale: {x: 0.6179459, y: 0.6179459, z: 0.6179459}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1520511743}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &157615475
 GameObject:
@@ -225,7 +225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &157615476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +325,58 @@ Transform:
   - {fileID: 1640117851}
   m_Father: {fileID: 0}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &284985025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284985027}
+  - component: {fileID: 284985026}
+  m_Layer: 0
+  m_Name: TotemSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284985026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284985025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79011c8586ba79640afc71e791637cb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementPrefab:
+  - {fileID: 8418377200510799278, guid: f59d4450e1db20742962dfae3353d52e, type: 3}
+  - {fileID: 6708727192249469684, guid: 16cb726429e6aba4599ee671b034b63c, type: 3}
+  - {fileID: 5878787885640729574, guid: 4d683fbc64b23e847a47ae2e0140adca, type: 3}
+  - {fileID: 2259053345996506886, guid: b1c4d8a709f19b9438fae322f2175847, type: 3}
+  - {fileID: 7770230095602901610, guid: 3304772eb50264b43b54934cefcab617, type: 3}
+  - {fileID: 6430305725639984904, guid: a29472c0e73595f4abc68dda5cc21952, type: 3}
+  - {fileID: 1095185799393506975, guid: 22b2e5818ebadeb478197546c796dd0a, type: 3}
+--- !u!4 &284985027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284985025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6093745, y: 2.8707263, z: 0.028669827}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &715499051
 GameObject:
@@ -1092,7 +1144,7 @@ RectTransform:
   - {fileID: 2004266122}
   - {fileID: 2001850758}
   m_Father: {fileID: 1520511743}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1207,7 +1259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1434203697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1295,7 +1347,7 @@ GameObject:
   - component: {fileID: 1520511745}
   m_Layer: 0
   m_Name: P5
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1431,8 +1483,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 16040781}
   - {fileID: 1180841831}
+  - {fileID: 16040781}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1467,6 +1519,7 @@ MonoBehaviour:
   - {fileID: 2004266121}
   - {fileID: 2001850757}
   life: 3
+  timeLoseLife: 10
 --- !u!1 &1552771478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1732,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 0.0052708145
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -2015,6 +2068,7 @@ MonoBehaviour:
   PortalOn: {fileID: 21300000, guid: d8d0537edd82ea240999c312c9cf35f3, type: 3}
   activateTime: 4
   isPortalOn: 0
+  escaped: 0
 --- !u!50 &1799904565
 Rigidbody2D:
   serializedVersion: 4
@@ -2174,7 +2228,7 @@ GameObject:
   - component: {fileID: 1953369503}
   - component: {fileID: 1953369504}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: ObjectSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
