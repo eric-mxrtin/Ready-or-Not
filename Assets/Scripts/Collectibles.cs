@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Collectibles : MonoBehaviour
 {
-    void onTriggerEnter(Collider other) 
+    void OnTriggerEnter(Collider other) 
     {
         if (other.tag == "Player") {
+            Debug.Log("totem");
             Destroy(this.gameObject);
         }
     }
