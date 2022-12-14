@@ -1460,7 +1460,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 101
+  m_SortingOrder: 0
   m_Sprite: {fileID: 556271761, guid: b84c4b95d1e11004dbdbe845e0a1cf8b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1659,7 +1659,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: f4e819b198a8f4a8f8602f883abc445f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 276ef7ebe142948718d75c51f561a5e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1993,7 +1993,7 @@ GameObject:
   - component: {fileID: 1799904566}
   - component: {fileID: 1799904565}
   m_Layer: 0
-  m_Name: cportal0
+  m_Name: oportal0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,7 +2040,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: db0bacb95f1e1491397f561c40596770, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46fc1a97b428e4d73892b395f1195dde, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2078,7 +2078,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd23bcb06eec84bfcbde1470394cd58c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PortalOn: {fileID: 21300000, guid: 7ba077370a5ec4f9d8f32c7fd9031c3a, type: 3}
+  PortalOn: {fileID: 21300000, guid: 57203b2202ca64fa7b9b06d2b0413489, type: 3}
   activateTime: 4
   isPortalOn: 0
   escaped: 0
@@ -2275,12 +2275,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementPrefab:
-  - {fileID: 7083584102789785994, guid: 74c5ae1c491f8914f998a2cac1e1fb2d, type: 3}
-  - {fileID: 3841856055746208592, guid: d1076b5e75b2f5442843630d1ce54a28, type: 3}
-  - {fileID: 5043295589781822893, guid: 2cb7179ff831acb4a98756f63194f21a, type: 3}
-  - {fileID: 1924861203117219452, guid: aa480e594839ce648b8b254fca9a1e3b, type: 3}
-  - {fileID: 870635637118908997, guid: a66b4f9c4fe6b2a48a4a5e2f1ca56693, type: 3}
-  objectCount: 150
+  - {fileID: 1455225302897428335, guid: c15e0e51280db0449b812feb087094c9, type: 3}
+  - {fileID: 7665307334049708345, guid: 240230ce43bad7f418b3188a8ac6e1db, type: 3}
+  - {fileID: 4360419622482626742, guid: b79efdc089f343248a71663440af38b1, type: 3}
+  - {fileID: 5100668479738574748, guid: 63f7f2d68aa5df94c9f0d4b8c576d984, type: 3}
+  - {fileID: 8220837964614981013, guid: 2e923675d68905c40b9bbff1a3b387e5, type: 3}
+  - {fileID: 1403314153800756197, guid: bf0d68cc5a31bb44286d09f7bb970c3d, type: 3}
+  - {fileID: 8819833761512527631, guid: 57f7123320e818f44acfc8c029251d85, type: 3}
+  objectCount: 300
 --- !u!1 &1984950231
 GameObject:
   m_ObjectHideFlags: 0

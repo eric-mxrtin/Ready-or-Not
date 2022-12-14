@@ -12,7 +12,7 @@ public class LevelsScript : MonoBehaviour
 
     public void AbandonedBuilding()
     {
-        SceneManager.LoadScene("SingleplayerA");
+        SceneManager.LoadScene("SingleplayerO");
     }
 
     public void Cave()
