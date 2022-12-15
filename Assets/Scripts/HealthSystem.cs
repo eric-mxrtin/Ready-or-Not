@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Manages the health of the player
+/// Class <c>HealthSystem</c> manages health of the player.
 /// </summary>
 public class HealthSystem : MonoBehaviour
 {
@@ -30,12 +30,12 @@ public class HealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(InvokeMethod(TakeDamage, timeLoseLife, 3));
+        StartCoroutine(InvokeMethod(TakeDamage,timeLoseLife, 3));
     }
     /// <summary>
-    /// Take removes a heart after given amount of time
+    /// Removes a heart after given amount of time
     /// </summary>
-    /// <param> <c>life</c> is being  </param>
+    /// <param> <c>life</c> is being  reduced to take away a heart</param>
     public void TakeDamage()
     {
         life -= 1;
@@ -45,7 +45,12 @@ public class HealthSystem : MonoBehaviour
             SceneManager.LoadScene("Main Menu");
         }
     }
-
+    /// <summary>
+    /// Delays call of method
+    /// </summary>
+    /// <returns>
+    /// New wait time for countdown
+    /// </returns>
     public IEnumerator InvokeMethod(Action method, float interval, int invokeCount)
     {
         yield return new WaitForSeconds(interval);

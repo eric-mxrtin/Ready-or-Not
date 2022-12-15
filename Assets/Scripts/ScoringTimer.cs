@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Class <c>ScoringTimer</c> timer used to calculate player score.
+/// </summary>
 public class ScoringTimer : MonoBehaviour
 {
    public float currentTime = 0f;
    public float startingTime = 10f;
    public bool timerIsActive = true;
    public GameObject countdownText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +39,6 @@ public class ScoringTimer : MonoBehaviour
             SceneManager.LoadScene("Main Menu");
 
         }
-
-
     }   
 
 }
