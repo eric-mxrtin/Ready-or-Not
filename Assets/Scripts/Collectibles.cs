@@ -10,7 +10,7 @@ public class Collectibles : MonoBehaviour
     /// <summary>
     /// Destroys collectible when colliding with a player
     /// </summary>
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.tag == "Player") {
             Debug.Log("totem");

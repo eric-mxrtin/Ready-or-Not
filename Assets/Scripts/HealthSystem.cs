@@ -30,7 +30,7 @@ public class HealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(InvokeMethod(TakeDamage,timeLoseLife, 3));
+        StartCoroutine(InvokeMethod(TakeDamage, timeLoseLife, 3));
     }
     /// <summary>
     /// Take removes a heart after given amount of time
