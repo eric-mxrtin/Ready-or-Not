@@ -4,18 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+/// <summary>
+/// Class <c>ShowCoins</c> is used to update player coins
+/// </summary>
 public class ShowCoins : MonoBehaviour
 {
+    /// <summary>
+    /// Initializes string component to define future variables
+    /// </summary>
     public string textValue;
+    /// <summary>
+    /// Initializes element that can take multiple forms of text
+    /// </summary>
     public TextMeshProUGUI textElement;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
+    /// <summary>
+    /// Updates coins collected by player every frame
+    /// </summary>
     void Update()
     {
         textElement.text = textValue; 

@@ -5,23 +5,41 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Class <c>ScoringTimer</c> timer used to calculate player score.
+/// Class <c>ScoringTimer</c> is a timer used to calculate player score.
 /// </summary>
 public class ScoringTimer : MonoBehaviour
 {
-   public float currentTime = 0f;
-   public float startingTime = 10f;
-   public bool timerIsActive = true;
-   public GameObject countdownText;
+    /// <value>
+    /// Property <c>currentTime</c> represents the present.
+    /// </value>
+    public float currentTime = 0f;
+    /// <value>
+    /// Property <c>startingTime</c> represents the time before the game begins.
+    /// </value>
+    public float startingTime = 10f;
+    /// <summary>
+    /// Represents if the timer is currently running
+    /// </summary>
+    public bool timerIsActive = true;
+    /// <summary>
+    /// Initializes the countown text displayed on screen
+    /// </summary>
+    public GameObject countdownText;
 
 
-    // Start is called before the first frame update
+    /// <summary>
+    /// Resets the current time
+    /// </summary>
     void Start()
     {
        currentTime = startingTime;
     }
 
-    // Update is called once per frame
+    /// <summary>
+    /// Updates timer when timer is in use, loads main menu when timer reaches 0
+    /// </summary>
+    /// <param><c>minutes</c> is the current time stored in minutes </param>
+    /// <param><c>seconds</c> is the current time stored in seconds </param>
     void Update()
     {
         if (timerIsActive)

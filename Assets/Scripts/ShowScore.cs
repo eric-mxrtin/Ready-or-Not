@@ -4,18 +4,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+
+/// <summary>
+/// Class <c>ShowScore</c> is used to update player score
+/// </summary>
 public class ShowScore : MonoBehaviour
 {
+    /// <summary>
+    /// Initializes string component to define future variables
+    /// </summary>
     public string textValue;
+    /// <summary>
+    /// Initializes element that can take multiple forms of text
+    /// </summary>
     public TextMeshProUGUI textElement;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
+    /// <summary>
+    /// Updates score for the player every frame
+    /// </summary>
     void Update()
     {
         textElement.text = textValue; 
