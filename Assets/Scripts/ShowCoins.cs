@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 using TMPro;
 
-public class ScowScores : MonoBehaviour
+public class ShowCoins : MonoBehaviour
 {
-
     public string textValue;
     public TextMeshProUGUI textElement;
-    public Player playerInfo;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
 
     // Update is called once per frame
     void Update()
     {
-        textElement.text = string.Format("{0:N5}", PlayerPrefs.GetFloat("HighScore"));
+        textElement.text = textValue; 
+        textElement.text = "Coins: " + PlayerPrefs.GetInt("coins", 0).ToString();
     }
 }

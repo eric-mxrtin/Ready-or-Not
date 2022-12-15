@@ -6,16 +6,10 @@ public class Sibling : MonoBehaviour
 {
 
     public Player playerScript;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if (playerScript.totemsCollected == 1) {
+        if (playerScript.totemsCollected == 7) {
             Debug.Log("escaping");
             Destroy(this.gameObject);
         }

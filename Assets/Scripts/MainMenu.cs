@@ -36,4 +36,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Shop");
     }
+    /// <summary>
+    /// Resets score and coin data
+    /// </summary>
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+    }
 }

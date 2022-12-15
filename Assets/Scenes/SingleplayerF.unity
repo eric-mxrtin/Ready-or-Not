@@ -2036,7 +2036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1520511739}
-  moveSpeed: 0.5
+  moveSpeed: 5
 --- !u!114 &1520511745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2079,6 +2079,7 @@ MonoBehaviour:
   portal: {fileID: 1799904564}
   timeStart: 0
   timerGoing: 0
+  coins: 0
 --- !u!1 &1552771478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2781,7 +2782,7 @@ MonoBehaviour:
   isPortalOn: 0
   escaped: 0
   playerScript: {fileID: 1520511746}
-  scoringTimer: {fileID: 0}
+  scoringTimer: {fileID: 1180841832}
 --- !u!50 &1799904565
 Rigidbody2D:
   serializedVersion: 4

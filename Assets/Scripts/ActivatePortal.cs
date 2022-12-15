@@ -18,14 +18,14 @@ public class ActivatePortal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("turnOnPortal", activateTime);
+        // Invoke("turnOnPortal", 1);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (playerScript.totemsCollected == 7) {
-            Debug.Log("escaping");
+            Debug.Log("escaping1");
             turnOnPortal();
         }
     }
